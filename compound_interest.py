@@ -13,7 +13,10 @@
 
 
 def compound_interest(p, t, r):
-    return p * (pow((1 + r / 100), t))
+    # Calculate total amount with compound interest
+    total_amount = p * (pow((1 + r / 100), t))
+    # Return the compound interest
+    return total_amount - p
 
 
 if __name__ == "__main__":
